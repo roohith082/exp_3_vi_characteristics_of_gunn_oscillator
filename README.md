@@ -14,7 +14,8 @@ Gunn power supply, Gunn oscillator, PIN modulator, isolator, frequency meter, va
 
 ## Experimental Setup
 
-<img width="2170" height="725" alt="image" src="https://github.com/user-attachments/assets/9572ed54-7f9f-413c-b568-c08d9049d680" />
+<img width="960" height="1600" alt="41203421-2cb2-4bdb-97e1-67ed6fbcf5b6" src="https://github.com/user-attachments/assets/8933d5c2-dc98-426d-8f76-6536fe5c54be" />
+
 
 ---
 
@@ -75,13 +76,13 @@ Although a Gunn oscillator can be amplitude-modulated with the bias voltage, a s
 
 > **Note:** After tuning the Gunn source, follow the same procedure for VSWR and impedance measurement as for the depth of modulation of the PIN modulator.
 
-## Observation
+## Graph
+<img width="1200" height="1600" alt="883e3eb1-a2e0-4802-b7fe-cb8f759c9fb9" src="https://github.com/user-attachments/assets/5200b3e7-8600-44a3-8a15-e902de011893" />
 
-*(Include your own table relevant to the experiment.)*
 
-## Calculation
+## Observation & Calculation
+<img width="921" height="1293" alt="541a5548-3176-4b16-b685-d7581509a55c" src="https://github.com/user-attachments/assets/0af4c313-802a-4533-90c5-cdfc22236a5f" />
 
-*(Include your own calculation relevant to the experiment.)*
 
 ## Precautions
 
@@ -91,4 +92,5 @@ Although a Gunn oscillator can be amplitude-modulated with the bias voltage, a s
 
 ## Conclusion
 
-*(Write your own.)*
+<img width="1280" height="845" alt="3f686540-bd7b-40dd-a5de-c6bba6e7574b" src="https://github.com/user-attachments/assets/89feacdb-f542-468a-808a-08d20e0500a6" />
+
