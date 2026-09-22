@@ -1,96 +1,87 @@
-# exp_3_vi_characteristics_of_gunn_oscillator
+# exp_4_characteristics_of_directional_coupler
 
-# Experiment 3 — V–I Characteristics of Gunn Oscillator
+# Experiment 4 — Directional Coupler Characteristics
 
 ---
 
 ## Aim
 
-To study the I–V characteristics of a Gunn diode and the depth of modulation of a PIN diode.
+To measure the directivity and coupling factor for the given directional couplers.
 
-## Apparatus Used
+## Apparatus Required
 
-Gunn power supply, Gunn oscillator, PIN modulator, isolator, frequency meter, variable attenuator, detector mount, slotted section, VSWR meter.
-
-## Experimental Setup
-
-<img width="960" height="1600" alt="41203421-2cb2-4bdb-97e1-67ed6fbcf5b6" src="https://github.com/user-attachments/assets/8933d5c2-dc98-426d-8f76-6536fe5c54be" />
-
+Klystron power supply, klystron mount with tube, isolator, variable attenuator, frequency meter, slotted line section, directional coupler, detector mount / crystal detector, matched terminations, Power meter, waveguide stands.
 
 ---
 
 ## Theory
 
-The Gunn oscillator is based on the **negative differential conductivity** effect in bulk semiconductors. The Gunn diode has two conduction bands separated by an energy gap larger than thermal agitation energies. When an electron is transferred to the satellite energy band it acquires negative differential mobility, producing the negative resistance required for oscillation.
+# Directional Coupler
 
-In a Gunn oscillator the diode is placed in a resonant cavity, so the oscillation frequency is set by the cavity dimensions rather than by the diode itself.
+<img width="549" height="200" alt="image" src="https://github.com/user-attachments/assets/58febc6f-896b-45ab-8f0a-d973b661f5b4" />
 
-Although a Gunn oscillator can be amplitude-modulated with the bias voltage, a separate **PIN modulator** is used in this experiment: a square-wave modulating signal is applied through the modulator onto the microwave carrier.
 
-<img width="542" height="341" alt="image" src="https://github.com/user-attachments/assets/313e43ed-dd69-4b09-9a4f-7a7616faa805" />
+A directional coupler is a flanged, built-in waveguide assembly that samples a small amount of microwave power for measurement purposes. It can be designed to measure incident and/or reflected power, SWR values, provide a signal path to a receiver, or perform other desirable operations, and can be unidirectional or bidirectional.
+
+In its most common form the directional coupler is a **four-port waveguide junction** consisting of a primary main waveguide and a secondary auxiliary waveguide. A small portion of the input power at port 1 is coupled to port 4, so this small power can be measured. Ideally, no power should come out of port 3.
+
+The performance of a directional coupler is usually defined by two parameters:
+
+1. **Coupling factor**
+2. **Directivity**
 
 ---
 
+## Experimental Setup
+
+<img width="783" height="270" alt="image" src="https://github.com/user-attachments/assets/0b0576bb-4b6f-4e21-8a34-8f54ca04adf9" />
+
 ## Procedure
 
-1. Set up the components and equipment as shown in the figure above.
-2. Initially set the variable attenuator for maximum attenuation.
-3. Keep the control knobs of the Gunn power supply as follows:
+1. Switch ON the klystron supply with necessary precautions.
+2. Operate the klystron in its best mode and note the corresponding output power as **P₁** (P₁ = incident power).
+3. Connect the directional coupler as shown in the experimental setup.
+4. Without disturbing the mode of the klystron, connect the directional coupler as shown in the bench setup.
 
-   | Control | Setting |
-   |---|---|
-   | Meter switch | OFF |
-   | Gunn bias knob | Fully anti-clockwise |
-   | PIN bias knob / Mod amplifier | Mid position |
-   | PIN mod frequency | Mid position |
+---
 
-4. Keep the control knobs of the VSWR meter as follows:
+## Measurements
 
-   | Control | Setting |
-   |---|---|
-   | Meter switch | Normal |
-   | Input switch | Crystal low impedance / 200 K |
-   | Range dB switch | 50 dB |
-   | Gain control knob | Fully clockwise |
+P1 = Without directional coupler
 
-5. Set the micrometer of the Gunn oscillator between 5–7 mm for the required frequency of operation.
-6. Switch ON the Gunn power supply, the VSWR meter and the cooling fan.
-7. Keep the mode switch of the Gunn power supply at square wave / internal modulation.
-8. Turn the meter knob to the voltage position and note that as the Gunn bias voltage is varied the current starts decreasing — this indicates the negative resistance characteristic of the Gunn diode. Apply a voltage that puts the device in the middle of the negative resistance region.
-9. Connect the detector output to the SWR meter.
-10. Adjust the square-wave modulation frequency to approximately 1 kHz.
-11. Change the meter range if no deflection is observed.
-12. Keep the slotted-line probe at the position where maximum deflection is observed on the meter.
-13. Adjust the attenuator setting and the gain control knob of the VSWR meter and tune the detector plunger so the pointer indicates VSWR = 1.
-14. Move the detector probe along the slotted line and note the position where the pointer reaches the extreme left — the first minimum. To locate the minimum exactly, note the positions of equal-response points on either side; their midpoint gives the position of the minimum. Note the next minimum position the same way.
-15. Repeat the above procedure for different micrometer settings.
+P2 = Port 2 Output (P1 is input)
 
-### Depth of Modulation of the PIN Diode
+P3 = Port 3 Output (P1 is input)
 
-1. Apply the Gunn bias voltage slowly until the panel meter of the Gunn power supply reads 8 V.
-2. Tune the PIN modulator bias voltage and frequency knobs for maximum output on the oscilloscope.
-3. Align the bottom of the square wave on the oscilloscope with a reference level and note the micrometer reading of the variable attenuator.
-4. Now, using the variable attenuator, align the top of the square wave with the same reference level and note the micrometer reading.
-5. Connect the VSWR meter to the detector mount and note the dB reading for both micrometer settings of the variable attenuator.
-6. The difference between the two dB readings gives the modulation depth of the PIN modulator.
+P4 = Port 3 Output (P2 is input) [P1 is matched termination]
 
-> **Note:** After tuning the Gunn source, follow the same procedure for VSWR and impedance measurement as for the depth of modulation of the PIN modulator.
+---
+## Calculation
 
-## Graph
-<img width="1200" height="1600" alt="883e3eb1-a2e0-4802-b7fe-cb8f759c9fb9" src="https://github.com/user-attachments/assets/5200b3e7-8600-44a3-8a15-e902de011893" />
+Instertion Loss (dB) = P1-P2
+
+Coupling Factor (dB) = P1-P3
+
+Isolation (dB) = P1-P4
+
+Directivity (dB) = P3-P4
+
+---
+
+## Observation
+<img width="1390" height="1600" alt="9bdff910-e79c-457a-996b-8c9e485c073e" src="https://github.com/user-attachments/assets/df4466a1-979e-4a3f-a0f6-f3798d5b7523" />
 
 
-## Observation & Calculation
-<img width="921" height="1293" alt="541a5548-3176-4b16-b685-d7581509a55c" src="https://github.com/user-attachments/assets/0af4c313-802a-4533-90c5-cdfc22236a5f" />
 
 
 ## Precautions
 
-* Check the connections before switching on the kit.
-* Make all connections properly.
-* Take the observations carefully.
+1. The beam voltage should be minimum and the repeller voltage should be normal before switching the klystron power supply ON/OFF.
+2. Loose connections between the components should be avoided.
+3. The directional coupler must be handled carefully while inserting it into the circuit.
+
+---
 
 ## Conclusion
-
-<img width="1280" height="845" alt="3f686540-bd7b-40dd-a5de-c6bba6e7574b" src="https://github.com/user-attachments/assets/89feacdb-f542-468a-808a-08d20e0500a6" />
+<img width="1080" height="1466" alt="e0ee0f94-2ff2-4311-8f18-79bd28d92d40" src="https://github.com/user-attachments/assets/e02ccd57-df10-47d2-a272-4cd0eeac8068" />
 
